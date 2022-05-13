@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import stylizedLogo from "./assets/img/stylizedLogo.png";
+import PuzzleBoard from "./components/PuzzleBoard";
+// import LetterBoard from "./components/LetterBoard";
+import Scores from "./components/Scores";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={stylizedLogo} className="logo" />
+
+      {/* <LetterBoard /> */}
+      <PuzzleBoard />
+      <Scores />
     </div>
   );
 }
